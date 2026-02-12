@@ -1,2 +1,6 @@
-.streamlit/
+# Sirf secrets ko ignore karo
+.streamlit/secrets.toml
+
+# Baaki folders jo nahi chahiye
 __pycache__/
+.DS_Store
