@@ -1,6 +1,6 @@
 import streamlit as st
-import ui  # Humne jo ui.py banaya
-import logic # Humne jo logic.py banaya
+import ui  
+import logic 
 
 # --- 1. CONFIGURATION (Must be first) ---
 st.set_page_config(
@@ -56,10 +56,8 @@ for message in st.session_state.messages:
 user_input = st.chat_input("Message Chat...")
 
 if st.session_state.prompt_clicked:
-    # Agar card click hua
     process_chat(st.session_state.prompt_clicked)
     st.session_state.prompt_clicked = None
     st.rerun()
 elif user_input:
-    # Agar user ne type kiya
     process_chat(user_input)
